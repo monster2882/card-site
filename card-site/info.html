@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+</head>
+<body>
+    <h1 id="name">
+    Информация
+    </h1>
+<div class="header">
+    <div class="header-line">
+        <div id="line">
+             <img src="C:/Users/User/PycharmProjects/django/site/business_card_site/card_site/static/card_site/images/line.png"
+        </div>
+        <div id="line-up">
+            <img src="C:/Users/User/PycharmProjects/django/site/business_card_site/card_site/static/card_site/images/line.png"
+        </div>
+        <div id="line-right">
+            <img src="C:/Users/User/PycharmProjects/django/site/business_card_site/card_site/static/card_site/images/line.png"
+        </div>
+        <div id="line-right-up">
+            <img src="C:/Users/User/PycharmProjects/django/site/business_card_site/card_site/static/card_site/images/line.png"
+        </div>
+    </div>
+</div>
+<div id="photo">
+    <img src="C:/Users/User/PycharmProjects/django/site/business_card_site/card_site/static/card_site/images/1photo.png"
+</div>
+<div class="center">
+  <div id="fio">
+      <p>Салаев</p>
+      <p>Тимур</p>
+      <p>Эльдарович</p>
+  </div>
+    <p id="age">Возраст: <b>18 лет</b></p>
+    <p id="mail"> Почта: <b>timyrsal001@mail.ru</b></p>
+    <div class="social-buttons">
+        <a href="https://github.com/monster2882" class="social-button">
+            <img id="github" src="C:/Users/User/PycharmProjects/django/site/business_card_site/card_site/static/card_site/images/github.png" alt="GitHub">
+        </a>
+        <a href="https://vk.com/timyrsall" class="social-button2">
+            <img id="vk" src="C:/Users/User/PycharmProjects/django/site/business_card_site/card_site/static/card_site/images/vk.png" alt="VK">
+        </a>
+    <!-- Добавьте дополнительные кнопки для других социальных сетей -->
+    </div>
+    <div class="text">
+        <p id="info-name">Немного информации о себе:</p>
+        <p id="info-text"> Мне 18 лет, сейчас учусь на первом курсе ВУЗа, который находится в Москве. Сам родом из Краснодарского края.
+        Изучаю на данный момент Python с его различными библиотеками и фреймворками. Данный сайт я делаю просто небольшим проектом для тренировки
+        и для того, чтобы добавить его на GitHub.
+        </p>
+    </div>
+    <div class="skills">
+        <div class="soft-skills">
+            <p id="soft-text"><b>Soft-skills:</b></p>
+            <div class="soft-examples">
+                <p>Ответсвенность</p>
+                <p>Активность</p>
+            </div>
+            <div class="soft-example2">
+                <p>Исполнительность</p>
+                <p>Коммуникативность</p>
+            </div>
+        </div>
+        <div class="hard-skills">
+            <p id="hard-text"><b>Hard-skills:</b></p>
+            <div class="hard-examples">
+                <p>Python</p>
+                <p>Django</p>
+                <p>Модель OSI</p>
+                <p>GIT</p>
+                <p>HTML</p>
+                <p>Знание алгоритмов</p>
+                <p>Работа с Json</p>
+            </div>
+            <div class="hard-example2">
+                <p>SQL(MS SQL, PostgreSQL, MongoDB)</p>
+                <p>Теория Python(Классы, типы данных и тд.)</p>
+                <p>Модель TCP/IP</p>
+                <p>Docker</p>
+                <p>CSS</p>
+                <p>Работа с библиотеками(numpy, pandas)</p>
+                <p>Работа с Csv</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+<style>
+    #name {
+    margin: 0px 635px -10px;
+    font-size: 250%;
+    color: #333366;
+    }
+    #line {
+        height: 400px; 
+        width: 700px; 
+        overflow: hidden; 
+    }
+    #line-up {
+        height: 400px; 
+        width: 700px; 
+        position:absolute;
+	    left:7px;
+	    top:0;
+    }
+    #line-right {
+        position:absolute;
+	    left:870px;
+	    top:0;
+    }
+    #line-right-up {
+        position:absolute;
+	    left:0px;
+	    top:45px;
+    }
+    #fio {
+        font-size: 45px;
+    }
+    #fio p {
+        display: inline-block;
+        margin: 0;
+    }
+    .center {
+        position: relative;
+        left:480px;
+	    top:-320px;         
+    }
+     #age {
+        display: inline-block;
+        margin: 0;
+        margin-right: 30px; /* Добавление отступа справа */
+        font-size: 18px;
+    }
+    #mail {
+        display: inline-block;
+        margin: 0;
+        font-size: 18px;
+    }
+    #photo img {
+        width: 50%; /* Указываете желаемую ширину в процентах или пикселях */
+        height: auto; /* Автоматически рассчитывает высоту для сохранения пропорций */
+        position: relative;
+        left:70px;
+	    top:140px;  
+    }
+    .social-buttons{
+        width: 15%;
+        height: auto;
+        position: relative;
+        left:-55px;
+	    top:-135px;  
+    }
+    .text {
+        position: relative;
+        left:0px;
+	    top:25px;  
+    }
+    .soft-skills {
+        position: relative;
+        left: -400px;
+        top: 100px;
+    }
+    .soft-examples {
+        float: left;
+        font-size: 25px;
+    }
+
+    .soft-example2 {
+        float: right;
+        margin-right: 200px;
+    }
+    .soft-example2 p {
+        text-align: right;
+        font-size: 25px;
+    }
+    #soft-text {
+        position: relative; 
+        left: 120px;
+        font-size: 50px;
+    }
+    .hard-skills {
+        position: relative;
+        left: 170px;
+        top: -130px;
+        float: right;
+        margin-left: 20px;
+        font-size: 25px;
+    }
+    #hard-text {
+        position: relative; 
+        left: -30px;
+        top: -65px;
+        font-size: 50px;
+    }
+    .hard-examples {
+        text-align: right;
+        position: relative;
+        top: -35px;
+    }
+
+    .hard-example2 {
+        position: relative;
+        left: -230px;
+        top: -410px;
+        text-align: left;
+    }
+    #info-name {
+        font-size: 32px;
+    }
+    #info-text {
+        font-size: 18px;
+    }
+</style>
